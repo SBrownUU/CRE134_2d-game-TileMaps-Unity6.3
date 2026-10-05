@@ -1,7 +1,15 @@
 using UnityEngine;
 
 public class PlatformerController : MonoBehaviour
-{
+{   
+    abstract private class PlayerAction : Object
+    {
+        abstract public void enter();
+        abstract public void exit();
+        
+
+    }
+
     [Header("Movement Settings")]
     [SerializeField] private float moveSpeed = 7f;
     [SerializeField] private float jumpForce = 12f;
