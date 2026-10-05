@@ -36,6 +36,7 @@ public class PlatformerController : MonoBehaviour
         // Jump input
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
+            Debug.Log("yo i should be jumping");
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
         }
     }
